@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.c {
+  margin-top: 140px;
+}
+.c2 {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.c1 {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.boxProjects2 {
+  text-align: center;
+  width: 150px;
+  height: 87px;
+  margin: 1px;
+  padding: 1px;
+}
+
+.boxSkills,
+.boxProjects {
+  text-align: center;
+  width: 150px;
+  height: 87px;
+  margin: 1px;
+  padding: 1px;
+  color: white;
+}
+.boxSkills p,
+.boxProjects p {
+  font-size: 22px;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.boxProjects p:hover {
+  animation: animate2 0.2s linear forwards;
+}
+.boxSkills p:hover {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #000444);
+  animation: animate1 0.2s linear forwards;
+}
+
+.mirror1 {
+  cursor: pointer;
+  color: #f38de0;
+  -webkit-box-reflect: below 1px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  line-height: 0.7em;
+  outline: none;
+}
+.mirror1:hover {
+  animation: animateMirror1 0.2s linear forwards;
+}
+.mirror2 {
+  cursor: pointer;
+  color: #74f07f;
+  -webkit-box-reflect: below 1px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  line-height: 0.7em;
+  outline: none;
+}
+.mirror2:hover {
+  animation: animateMirror2 0.2s linear forwards;
+}
+.mirror3x {
+  color: #fff;
+  -webkit-box-reflect: below 1px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  line-height: 0.7em;
+  outline: none;
+}
+.mirror3 {
+  cursor: pointer;
+  color: #fff;
+  -webkit-box-reflect: below 1px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  line-height: 0.7em;
+  outline: none;
+}
+.mirror3:hover {
+  animation: animateMirror3 0.2s linear forwards;
+}
+@keyframes animateMirror1 {
+  0% {
+    color: #f38de0;
+    text-shadow: 0 0 5px #fb00cf;
+  }
+  100% {
+    color: #eee6ec;
+    text-shadow: 0 0 10px #fb00cf, 0 0 20px #fb00cf, 0 0 40px #fb00cf,
+      0 0 80px #fb00cf, 0 0 160px #fb00cf;
+  }
+}
+@keyframes animateMirror2 {
+  0% {
+    color: #74f07f;
+    text-shadow: 0 0 5px #53c55c;
+  }
+  100% {
+    color: #e7eee6;
+    text-shadow: 0 0 10px #53c55c, 0 0 20px #53c55c, 0 0 40px #53c55c,
+      0 0 80px #53c55c, 0 0 160px #53c55c;
+  }
+}
+@keyframes animateMirror3 {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+}
+.page {
+  margin-top: 80px;
+}
+.font1 {
+  font-size: 60px;
+  line-height: 22px;
+}
+.font2 {
+  font-size: 30px;
+  line-height: 22px;
+}
+.font3 {
+  font-size: 24px;
+  line-height: 22px;
+}
+.font4 {
+  font-size: 15px;
+  line-height: 22px;
+}
+.neon1 {
+  font-size: 25px;
+  color: #42d84e;
+  cursor: pointer;
+  border: 0.125em solid #42d84e;
+  display: inline-block;
+  width: 87px;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em #42d84e;
+  box-shadow: inset 0 0 0.5em 0 #42d84e, 0 0 0.5em 0 #42d84e;
+  position: relative;
+  transition: background-color 200ms linear;
+  margin-bottom: 6px;
+}
+.neon1::before {
+  pointer-events: none;
+  content: "";
+  background: #42d84e;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 101%;
+  left: 20%;
+  right: 100%;
+  bottom: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(0.9em);
+  opacity: 0.7;
+}
+.neon1:hover,
+.neon1:focus {
+  background: rgba(77, 175, 57, 0.411);
+  color: #a9f3ae;
+  border: 0.125em solid #a9f3ae;
+  text-shadow: none;
+}
+.neon1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 1em 0.5em rgba(77, 175, 57, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms linear;
+}
+.neon1:hover::before,
+.neon1:focus::before {
+  opacity: 1;
+}
+.neon1:hover::after,
+.neon1:focus::after {
+  opacity: 1;
+}
+.neon2 {
+  font-size: 25px;
+  color: #f38de0;
+  cursor: pointer;
+  border: 0.125em solid #f38de0;
+  display: inline-block;
+  width: 87px;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em #f38de0;
+  box-shadow: inset 0 0 0.5em 0 #f38de0, 0 0 0.5em 0 #f38de0;
+  position: relative;
+  transition: background-color 200ms linear;
+  margin-bottom: 6px;
+}
+.neon2::before {
+  pointer-events: none;
+  content: "";
+  background: #e4bddd;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 101%;
+  left: 20%;
+  right: 100%;
+  bottom: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(0.9em);
+  opacity: 0.7;
+}
+.neon2:hover,
+.neon2:focus {
+  background: rgba(252, 209, 252, 0.4);
+  color: #e4bddd;
+  border: 0.125em solid #e4bddd;
+  text-shadow: none;
+}
+.neon2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 1em 0.5em rgba(252, 209, 252, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms linear;
+}
+.neon2:hover::before,
+.neon2:focus::before {
+  opacity: 1;
+}
+.neon2:hover::after,
+.neon2:focus::after {
+  opacity: 1;
+}
+
+@keyframes animate1 {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #03a2f4;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03a2f4, 0 0 20px #03a2f4, 0 0 40px #03a2f4;
+  }
+}
+@keyframes animate2 {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #d7b586;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #d7b586, 0 0 20px #d7b586, 0 0 40px #d7b586;
+  }
+}
+.react-submenu {
+  position: relative;
+  top: -16px;
+  left: 46px;
+  width: 240px;
+}
+h1 p {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #540032;
+}
+.boxSkills {
+  background-image: url(images/fractal11.png);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.boxProjects {
+  background-image: url(images/texture46.png);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.special {
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 14%;
+  opacity: 0.5;
+  width: 72%;
+}
+#magic {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+.playground {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: -100;
+}
+.bottomPosition {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.minText {
+  font-size: 14px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.footer1 {
+  position: fixed;
+  left: 1%;
+  top: 96%;
+}
+.footer2 {
+  position: fixed;
+  left: 44.5%;
+  top: 93%;
+}
+.footer3 {
+  position: fixed;
+  left: 91%;
+  top: 96%;
+}
