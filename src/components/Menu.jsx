@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Menu = (props) => {
-  const page = props.page;
+  // const page = props.page;
   const skillBoxes = [
     { id: 0, name: "React", type: "mirror1 font3" },
     { id: 1, name: "CakePHP", type: "mirror1 font3" },

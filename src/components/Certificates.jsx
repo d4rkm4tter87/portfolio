@@ -8,7 +8,7 @@ const GoBremen = () => {
         <p className="mirror2 font2">Go Bremen</p>
       </div>
       <br />
-      <img src={img1} width="1500px" />
+      <img src={img1} alt="Certificates" width="1500px" />
     </>
   );
 };

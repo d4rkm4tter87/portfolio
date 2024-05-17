@@ -1,6 +1,4 @@
-import { Link, NavLink, Route } from "react-router-dom";
-import Categories from "./Categories";
-import Category from "./Category";
+import { NavLink } from "react-router-dom";
 
 export default function Menu2() {
   const getClass = ({ isActive }) => (isActive ? "nav-active" : null);

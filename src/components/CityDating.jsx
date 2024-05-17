@@ -7,7 +7,7 @@ const CityDating = () => {
         <p className="mirror2 font2">City Dating</p>
       </div>
       <br />
-      <img src={img1} width="500px" />
+      <img src={img1} alt="City Dating" width="500px" />
     </>
   );
 };

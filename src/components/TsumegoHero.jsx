@@ -8,7 +8,7 @@ const TsumegoHero = () => {
         <p className="mirror2 font2">Tsumego Hero</p>
       </div>
       <br />
-      <img src={img1} width="500px" />
+      <img src={img1} alt="Tsumego Hero" width="500px" />
     </>
   );
 };
