@@ -32,7 +32,7 @@ const Menu = (props) => {
                 className="neon1 font2"
                 onClick={() => setMenu(projectBoxes)}
               >
-                Projects
+                Projectsx
               </div>
             </p>
           </div>
@@ -63,7 +63,7 @@ const Menu = (props) => {
           <div className="boxProjects2">
             <p>
               <div className="neon2 font2" onClick={() => setMenu(skillBoxes)}>
-                Skillsx
+                Skills
               </div>
             </p>
           </div>
