@@ -63,7 +63,7 @@ const Menu = (props) => {
           <div className="boxProjects2">
             <p>
               <div className="neon2 font2" onClick={() => setMenu(skillBoxes)}>
-                Skills
+                Skillsx
               </div>
             </p>
           </div>
